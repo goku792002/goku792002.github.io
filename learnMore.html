@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yash's summer in New York</title>
+</head>
+<body>
+    <sectionA>
+        <header>
+            <a href='Index.html'><img src = "Images/pfp.png" class = "pfp"></a> <!-- my photo -->
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="restaurantList.html">Restaurant list</a></li>
+                <li><a href="learnMore.html">Learn More</a></li>
+                <li><a href="aboutMe.html">About me</a></li>
+            </ul>
+        </header>
+        <div class = "subtitle-container">
+            <div class = "secondary-title">
+                Fill out this form to stay up to date with my food blogs!
+            </div>
+        </div>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required> 
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="favorite-cuisine">Favorite Cuisine:</label>
+            <select id="favorite-cuisine" name="favorite-cuisine">
+                <option value="italian">Italian</option>
+                <option value="mexican">Mexican</option>
+                <option value="chinese">Chinese</option>
+                <option value="indian">Indian</option>
+                <option value="japanese">Japanese</option>
+            </select>
+
+            <label for = "feedback">Feedback:</label>
+            <textarea id = "feedback" name = "feedback" rows = "4"></textarea>
+
+            <button type = "submit">Submit</button>
+        </form>
+    </sectionA>
+    <div class = "footer">
+        <div class = "footer-name">
+        Yash Mittal
+        </div>
+        <div class = "footer-contact">
+        yash082002@gmail.com
+        </div>
+    </div>
+</body>
+</html>
