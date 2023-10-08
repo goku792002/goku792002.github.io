@@ -1,0 +1,434 @@
+@font-face {
+    font-family:'Cabin';
+    src: url('Cabin.woff2') format('woff2'),
+         url('Cabin.woff') format('woff');
+
+    font-family: 'Vollkorn';
+    src: url('Vollkorn.woff2') format('woff2'),
+         url('Vollkorn.woff') format('woff');
+  }
+
+  * /* targets all elements on the web page */
+  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cabin, sans-serif;
+    font-size: 16px;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow: auto;
+    background-image: url("Images/IMG_3194 1.png");
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position:center center;
+    height: 100vh;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+
+  .brand-title{
+    font-size: 1.5rem;
+    margin:1rem;
+  }
+
+  .navbar-links ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navbar-links li{
+    list-style: none;
+  }
+
+  .navbar-links li a{
+    color:white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+  }
+
+  .navbar-links li:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+  }
+
+  .toggle-button .bar {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    border-radius: 13px;
+  }
+
+  .title-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom: 4rem;
+  }
+
+  .main-title { /* Journey on */
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color: white;
+  }
+
+  .sub-title { /* Explore the hidden gems */
+    font-family:"vollkorn";
+    font-weight:100;
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.75)
+  }
+
+  .button-container{ /* EXPLORE NOW */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20rem;
+  }
+  
+  #scrollButton{
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: 2px solid white;
+    cursor: pointer;
+  }
+
+  .beigeRect-container{
+    display: flex;
+    height: 30rem;
+    background-color: #F3F1EB;
+  }
+
+  .title-subtitle{ /* Recommended destinations & Experience travel */
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -25rem;
+    margin-bottom: 4rem;
+  }
+
+  .recommended-destinations {
+    font-size: 3rem;
+    color: #4D4D4D;
+    margin-bottom: 1.5rem;
+  }
+
+  .experience-text {
+    font-family:"vollkorn";
+    font-size: 1.5rem;
+    color: #808080;
+  }
+
+/*--------Destination squares CSS-------------*/
+  
+  .destination-container {  /* Contains everything about the destinations */
+    padding-left:10%;
+    padding-right:10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .destination-squares { /* Contains destination squares */
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  /*-------ROW 1 CSS------------*/
+
+  .boston-square,
+  .kenya-square { /* Each square */
+    flex-basis: calc(90%); 
+    margin:20px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    display:flex;
+    flex-direction:row;
+    background-color:#D98460;
+    border-radius: 1rem;
+  }
+
+  .boston-square img,
+  .kenya-square img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.75rem;
+    order:1;
+  }
+
+  .boston-square-text,
+  .kenya-square-text {
+    padding-left:1rem;
+    order:2;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .boston-square h2,
+  .kenya-square h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight:300;
+    padding-bottom:0.5rem;
+  }
+
+  .boston-square p,
+  .kenya-square p {
+    font-size: 1.1rem;
+    color:#DFDFDF;
+    letter-spacing: 0.05rem;
+  }
+
+  /*-------ROW 2 CSS------------*/
+
+  .spain-square,
+  .denmark-square { /* Each square */
+    flex-basis: calc(90%); 
+    margin:20px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    display:flex;
+    flex-direction:row;
+    background-color:#85AFBC;
+    border-radius: 1rem;
+  }
+
+  .spain-square img,
+  .denmark-square img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.75rem;
+    order:1;
+  }
+
+  .spain-square-text,
+  .denmark-square-text {
+    padding-left:1rem;
+    order:2;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .spain-square h2,
+  .denmark-square h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight:300;
+    padding-bottom:0.5rem;
+  }
+
+  .spain-square p,
+  .denmark-square p {
+    font-size: 1.1rem;
+    color:#DFDFDF;
+    letter-spacing: 0.05rem;
+  }
+
+/*-------ROW 3 CSS------------*/
+
+  .canada-square,
+  .india-square { /* Each square */
+    flex-basis: calc(90%); 
+    margin:20px;
+    padding: 10px;
+    /* box-sizing: border-box; */
+    display:flex;
+    flex-direction:row;
+    background-color:#503D3F;
+    border-radius: 1rem;
+  }
+
+  .canada-square img,
+  .india-square img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 0.75rem;
+    order:1;
+  }
+
+  .canada-square-text,
+  .india-square-text {
+    padding-left:1rem;
+    order:2;
+    display:flex;
+    flex-direction:column;
+  }
+
+  .canada-square h2,
+  .india-square h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight:300;
+    padding-bottom:0.5rem;
+  }
+
+  .canada-square p,
+  .india-square p {
+    font-size: 1.1rem;
+    color:#DFDFDF;
+    letter-spacing: 0.05rem;
+  }
+
+/*------------------------------*/
+
+  .read-more {
+    padding-top:1.5rem;
+    font-size: 1.1rem;
+    letter-spacing:0.15rem;
+    color: #F3F1EB;
+    text-decoration: none;
+  }
+
+  .read-more:hover {
+    color: #4D4D4D;
+  }
+
+  @media (max-width: 400px) { /* PHONE SCREEN */
+    .toggle-button {
+      display: flex;
+    }
+    .navbar-links {
+      display: none;
+    }
+
+    .brand-title {
+      font-size: 1rem;
+    }
+
+    body {
+      background-size: cover;
+      background-position: left;
+    }
+
+    .main-title {
+      font-size: 2rem;
+    }
+
+    .sub-title {
+      font-size: 1rem;
+    }
+
+    .recommended-destinations {
+      font-size: 1.5rem;
+    }
+  
+    .experience-text {
+      font-size: 1rem;
+    }
+
+    .destination-squares { /* 1 square on a row */
+      display:flex;
+      flex-direction:column;
+      justify-content: space-between;
+    }
+
+    .boston-square,
+    .kenya-square { /* Moving image on top of text within each square */
+      flex-basis: calc(90%); 
+      margin:20px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      background-color:#D98460;
+      border-radius: 1rem;
+    }
+
+    .spain-square,
+    .denmark-square { /* Moving image on top of text within each square */
+      flex-basis: calc(90%); 
+      margin:20px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      background-color:#85AFBC;
+      border-radius: 1rem;
+    }
+
+    .canada-square,
+    .india-square { /* Moving image on top of text within each square */
+      flex-basis: calc(90%); 
+      margin:20px;
+      padding: 10px;
+      display:flex;
+      flex-direction:column;
+      background-color:#503D3F;
+      border-radius: 1rem;
+    }
+
+    .boston-square img,
+    .kenya-square img { /* Making images smaller */
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      order:1;
+      padding-bottom:0.5rem;
+    }
+
+    .spain-square img,
+    .denmark-square img { /* Making images smaller */
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      order:1;
+      padding-bottom:0.5rem;
+    }
+
+    .canada-square img,
+    .india-square img { /* Making images smaller */
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.5rem;
+      order:1;
+      padding-bottom:0.5rem;
+    }
+  }
+
+  @media (max-width: 820px) { /* TABLET SCREEN */
+    .toggle-button {
+      display: flex;
+    }
+    
+    .navbar-links {
+      display: none;
+    }
+
+    body {
+      background-size: cover;
+      background-position: left;
+    }
+
+    .destination-squares { /* 1 square on a row */
+      display:flex;
+      flex-direction:column;
+      justify-content: space-between;
+    }
+  }
